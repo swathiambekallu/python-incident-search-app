@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServiceNow Incident Search</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ServiceNow Incident Search</h1>
+      <p class="subtitle">Build match sets with AND/OR inside each set. Separate sets are combined with OR.</p>
+    </header>
+
+    <section class="builder-card">
+      <div class="builder-header">
+        <div class="builder-title">Condition builder</div>
+        <div class="builder-hint">Sets joined by OR</div>
+      </div>
+
+      <form id="search-form">
+        <div id="groups"></div>
+
+        <div class="builder-footer">
+          <div class="toolbar">
+            <button type="button" class="btn-or" id="add-group">+ Or also match</button>
+          </div>
+          <div class="footer-actions">
+            <button type="button" class="btn-secondary" id="reset-button">Clear</button>
+            <button type="submit" class="btn-primary" id="search-button">Run search</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <p id="status" class="status" aria-live="polite"></p>
+    <div id="results"></div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

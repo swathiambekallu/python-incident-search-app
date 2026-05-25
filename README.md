@@ -20,7 +20,7 @@ A FastAPI web application that searches ServiceNow incidents by number or short 
 1. Clone or copy this project and enter the directory:
 
    ```bash
-   cd servicenow-incidents
+   cd python-incident-search-app
    ```
 
 2. Create a virtual environment and install dependencies:
